@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DS APEX — sport, fotbal, MMA, calisthenics, web development, programare, robotică, design digital, AI, business digital și networking. Proiecte, resurse și servicii.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#080810">
+<title>DS APEX | Sport, tehnologie și proiecte digitale</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--bg:#080810;--panel:#11111d;--purple:#9b5cff;--blue:#19c8ff;--red:#ff405d;--white:#f5f4ff;--muted:#aaa9bd}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.65;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 15%,#32105b66,transparent 38%),radial-gradient(ellipse at 85% 35%,#063a5666,transparent 38%),linear-gradient(135deg,#080810,#0b0b16 55%,#100813)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.13;pointer-events:none;background-image:linear-gradient(#ffffff12 1px,transparent 1px),linear-gradient(90deg,#ffffff12 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 90%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,91%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#080810e8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff15}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font:800 1.35rem Orbitron,sans-serif;letter-spacing:2px;white-space:nowrap}.logo span{color:var(--blue)}
+nav{display:flex;gap:17px;align-items:center;font-size:.82rem;color:#d6d4e4}nav a:hover{color:var(--blue)}.contact-link{padding:9px 14px;border:1px solid var(--purple);border-radius:6px;box-shadow:0 0 18px #9b5cff35}
+.menu{display:none;background:none;color:white;border:0;font-size:1.6rem}
+.hero{min-height:calc(100vh - 76px);display:grid;place-items:center;text-align:center;padding:90px 0;position:relative}.hero-content{max-width:920px}.eyebrow{color:var(--blue);font:600 .78rem Orbitron,sans-serif;letter-spacing:3px;text-transform:uppercase}
+.hero h1{font:800 clamp(3rem,9vw,7rem)/1.05 Orbitron,sans-serif;margin:24px 0;background:linear-gradient(90deg,#fff 10%,var(--blue),var(--purple),var(--red));background-clip:text;color:transparent;filter:drop-shadow(0 0 25px #8b4cff35)}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:720px;margin:0 auto 30px}.tagline{font:600 .8rem Orbitron,sans-serif;letter-spacing:3px;color:#e5e2f2;margin-bottom:30px}
+.actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.btn{padding:13px 22px;border-radius:5px;font-weight:700;display:inline-block;transition:.25s;border:1px solid var(--blue);background:linear-gradient(100deg,#6c35c9,#087da9);box-shadow:0 0 25px #19c8ff2b}.btn:hover{transform:translateY(-4px);box-shadow:0 0 32px #19c8ff55}.btn.alt{background:transparent;border-color:#ffffff40;box-shadow:none}
+section{padding:82px 0;scroll-margin-top:76px}.section-head{text-align:center;margin-bottom:38px}.section-head small{font:600 .72rem Orbitron,sans-serif;color:var(--red);letter-spacing:3px}.section-head h2{font:700 clamp(1.8rem,4vw,3rem) Orbitron,sans-serif;margin-top:12px}.section-head p{color:var(--muted);max-width:760px;margin:12px auto 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#171725ed,#0e0e18ed);border:1px solid #ffffff16;padding:25px;border-radius:12px;transition:.3s;position:relative;overflow:hidden}.card:before{content:"";position:absolute;top:0;left:0;width:70px;height:2px;background:linear-gradient(90deg,var(--blue),var(--purple))}.card:hover{transform:translateY(-5px);border-color:#9b5cff88;box-shadow:0 15px 45px #0008}
+.icon{font-size:1.7rem;margin-bottom:12px}.card h3{font:600 1rem Orbitron,sans-serif;margin-bottom:11px}.card p,.card li{color:var(--muted);font-size:.91rem}.card ul{padding-left:19px;margin-top:10px}.card li{margin:5px 0}.card .note{font-size:.82rem;color:#d3c4f2;margin-top:13px;padding-top:10px;border-top:1px solid #ffffff16}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.visual{min-height:300px;border:1px solid #ffffff20;border-radius:14px;background:radial-gradient(circle at 50% 50%,#722dbe55,transparent 55%),linear-gradient(135deg,#10101c,#0b1823);display:grid;place-items:center;text-align:center;padding:30px}.visual strong{font:800 clamp(2rem,5vw,4rem) Orbitron,sans-serif;background:linear-gradient(90deg,var(--blue),var(--purple),var(--red));background-clip:text;color:transparent}.copy h2{font:700 2rem Orbitron,sans-serif;margin-bottom:18px}.copy p{color:var(--muted);margin-bottom:14px}.pill{display:inline-block;border:1px solid #9b5cff77;color:#d9c4ff;padding:7px 12px;border-radius:30px;font-size:.78rem;margin:5px 4px 0 0}
+.notice{margin-top:25px;padding:17px 20px;border:1px solid #19c8ff38;border-radius:9px;background:#0b1c273d;color:#c6c5d7;font-size:.88rem}
+.contact-box{text-align:center;padding:45px 25px;border-radius:14px;background:linear-gradient(120deg,#21113a,#0d2632);border:1px solid #ffffff22}.contact-box p{color:var(--muted);margin:14px auto 25px;max-width:650px}.contact-actions{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}.contact-actions .btn{min-width:175px}
+footer{padding:28px 0;border-top:1px solid #ffffff16;color:#8e8da2;font-size:.83rem}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:980px){nav{gap:11px;font-size:.75rem}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){nav{display:none;position:absolute;top:76px;left:0;right:0;padding:22px 5%;background:#0b0b15;flex-direction:column;align-items:stretch;border-bottom:1px solid #ffffff20;font-size:.95rem}nav.open{display:flex}.menu{display:block}.split{grid-template-columns:1fr}.hero{min-height:80vh}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2px}.tagline{font-size:.68rem;letter-spacing:2px}section{padding:64px 0}.card{padding:22px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">DS <span>APEX</span></a>
+<button class="menu" aria-label="Deschide meniul" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav aria-label="Navigare principală">
+<a href="#home">Acasă</a><a href="#about">Despre</a><a href="#sport">Sport</a><a href="#tech">Tehnologie</a><a href="#business">Business</a><a href="#contact" class="contact-link">Contact</a>
+</nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-content reveal">
+<div class="eyebrow">Personal platform · Sport & technology</div><h1>DS APEX</h1><div class="tagline">DISCIPLINE. PERFORMANCE. INNOVATION.</div>
+<p>O platformă dedicată sportului, tehnologiei și creativității digitale. Aici găsești proiecte, servicii, resurse și idei construite prin învățare și practică.</p>
+<div class="actions"><a class="btn" href="#about">Descoperă DS APEX</a><a class="btn alt" href="#sport">Explorează domeniile</a></div>
+</div></section>
+
+<section id="about"><div class="wrap split"><div class="visual reveal"><strong>LEVEL<br>UP.</strong></div><div class="copy reveal">
+<div class="eyebrow">01 / Despre DS APEX</div><h2>Construiesc. Învăț. Evoluez.</h2>
+<p>DS APEX reunește domenii care mă interesează și în care dezvolt proiecte: sport, programare, web development, robotică, design, business digital și networking.</p>
+<p>Platforma va include prezentări clare ale serviciilor, proiecte personale, materiale educaționale și exemple practice. Conținutul va fi completat pe măsură ce apar proiecte și experiență nouă.</p>
+<span class="pill">Disciplină</span><span class="pill">Creativitate</span><span class="pill">Progres</span><span class="pill">Învățare continuă</span>
+</div></div></section>
+
+<section id="sport"><div class="wrap"><div class="section-head reveal"><small>02 / SPORT</small><h2>Sport, pregătire și dezvoltare</h2><p>Informații și exemple de exerciții pentru dezvoltarea tehnicii, coordonării și condiției fizice. Activitatea trebuie adaptată vârstei, nivelului și stării fiecărei persoane.</p></div>
+<div class="grid">
+<article class="card reveal"><div class="icon">⚽</div><h3>Fotbal – toate pozițiile</h3><p>Materiale și exerciții tehnice pentru portari, fundași, mijlocași, extreme și atacanți.</p><ul>
+<li>Portar: poziționare de bază, coordonare, joc de picioare și exerciții de reacție;</li>
+<li>Fundași: marcaj, poziționare, anticipare, pase și degajări;</li>
+<li>Mijlocași: control orientat, pase, viziune, tranziție și păstrarea posesiei;</li>
+<li>Extreme: dribling, schimbări de direcție, centrări și intrări spre poartă;</li>
+<li>Atacanți: demarcări, preluări, finalizare și poziționare în careu;</li>
+<li>Tehnică individuală: conducerea mingii, pase, primul control, șut și jonglerii;</li>
+<li>Pregătire generală: coordonare, agilitate, viteză și rezistență adaptate nivelului.</li>
+</ul><p class="note">Conținut informativ și exerciții demonstrative; nu reprezintă antrenorat profesionist sau planuri individuale certificate.</p></article>
+
+<article class="card reveal"><div class="icon">🥊</div><h3>MMA & sporturi de contact</h3><p>Prezentări introductive despre MMA și pregătirea fizică generală asociată acestui sport.</p><ul>
+<li>Prezentarea disciplinelor și regulilor de bază;</li><li>Coordonare, echilibru și mobilitate;</li><li>Deplasare și lucru de picioare la nivel introductiv;</li><li>Condiționare fizică generală și încălzire;</li><li>Disciplină, autocontrol și recuperare;</li><li>Prezentarea echipamentului de protecție și a rolului antrenorului.</li>
+</ul><p class="note">Tehnicile de contact se învață numai într-un club, sub supravegherea unui antrenor calificat.</p></article>
+
+<article class="card reveal"><div class="icon">💪</div><h3>Calisthenics</h3><p>Exerciții cu greutatea corpului și progresii introductive, fără aparate complexe.</p><ul>
+<li>Exerciții de bază pentru partea superioară și inferioară a corpului;</li><li>Flotări și variante adaptate nivelului;</li><li>Genuflexiuni, fandări și exerciții de stabilitate;</li><li>Progresii pentru tracțiuni, acolo unde există bară sigură;</li><li>Exerciții pentru abdomen, echilibru și control corporal;</li><li>Mobilitate și tehnică corectă de execuție.</li>
+</ul><p class="note">Accent pe execuție corectă, progres gradual și pauze suficiente, nu pe antrenamente extreme.</p></article>
+
+<article class="card reveal"><div class="icon">🏃</div><h3>Condiție fizică & atletism</h3><p>Resurse introductive pentru dezvoltarea capacităților fizice generale.</p><ul>
+<li>Încălzire și revenire după efort;</li><li>Exerciții de coordonare și agilitate;</li><li>Dezvoltarea vitezei prin exerciții potrivite nivelului;</li><li>Rezistență și anduranță prin activități progresive;</li><li>Mobilitate, echilibru și stabilitate;</li><li>Odihnă, hidratare și recuperare.</li>
+</ul></article>
+
+<article class="card reveal"><div class="icon">📋</div><h3>Planuri și materiale sportive</h3><p>Materiale generale care ajută la organizarea și înțelegerea antrenamentului.</p><ul>
+<li>Exemple de sesiuni individuale și încălziri;</li><li>Fișe pentru urmărirea progresului tehnic;</li><li>Explicații despre reguli și poziții în fotbal;</li><li>Prezentări despre pregătirea fizică;</li><li>Jurnale de antrenament și evaluare personală.</li>
+</ul></article>
+</div></div></section>
+
+<section id="tech"><div class="wrap"><div class="section-head reveal"><small>03 / TEHNOLOGIE</small><h2>Tehnologie transformată în proiecte</h2><p>Servicii și materiale prezentate transparent, în funcție de nivelul actual de lucru și de complexitatea fiecărui proiect.</p></div>
+<div class="grid">
+<article class="card reveal"><div class="icon">🌐</div><h3>Web Development</h3><p>Crearea și îmbunătățirea paginilor web pentru persoane, proiecte și afaceri mici.</p><ul>
+<li>Site-uri de prezentare cu una sau mai multe pagini;</li><li>Pagini personale, portofolii și pagini pentru servicii;</li><li>Structură și conținut în HTML;</li><li>Stilizare și layout în CSS;</li><li>Interacțiuni de bază cu JavaScript;</li><li>Design responsive pentru telefon, tabletă și desktop;</li><li>Butoane de contact, apel și legături către platforme;</li><li>Organizarea fișierelor, verificarea și corectarea afișării;</li><li>Publicare pe platforme precum GitHub Pages, când proiectul permite;</li><li>Actualizări de text, imagini și secțiuni.</li>
+</ul><p class="note">Proiectele se acceptă în funcție de complexitate și de competențele disponibile la momentul colaborării.</p></article>
+
+<article class="card reveal"><div class="icon">🎨</div><h3>Graphic Design & Video Editing</h3><p>Materiale vizuale și video pentru proiecte personale, pagini online și promovare.</p><ul>
+<li>Postări, bannere, coperți și imagini pentru social media;</li><li>Flyere, afișe și materiale promoționale;</li><li>Prezentări vizuale și concepte de identitate;</li><li>Editare foto: decupare, redimensionare și ajustări de bază;</li><li>Montaj video, tăieturi, tranziții și subtitrări;</li><li>Clipuri scurte pentru social media;</li><li>Generare de imagini cu instrumente AI;</li><li>Generare de videoclipuri cu instrumente AI;</li><li>Concepte creative, vizuale și cinematografice;</li><li>Galerie cu lucrări și experimente proprii.</li>
+</ul><p class="note">Imaginile și videoclipurile generate vor fi publicate în galerie pe măsură ce sunt create și verificate.</p></article>
+
+<article class="card reveal"><div class="icon">🤖</div><h3>Robotică & Programming</h3><p>Proiecte introductive și explicații pentru cei care descoperă programarea și electronica.</p><ul>
+<li>Noțiuni de bază despre algoritmi și programare;</li><li>Exerciții introductive în C++ și Python;</li><li>Proiecte și simulări în Tinkercad Circuits;</li><li>Componente electronice și circuite simple;</li><li>Idei de roboți și sisteme automatizate demonstrative;</li><li>Documentarea etapelor și a rezultatelor;</li><li>Explicarea codului și depanarea erorilor simple;</li><li>Prezentarea proiectelor personale.</li>
+</ul><p class="note">Proiectele avansate se vor adăuga pe măsură ce sunt studiate și testate.</p></article>
+
+<article class="card reveal"><div class="icon">🌍</div><h3>Networking & Cybersecurity</h3><p>Concepte introductive despre rețele și securitate digitală, explicate într-un mod accesibil.</p><ul>
+<li>Noțiuni despre rețele LAN și WAN;</li><li>Adrese IP, routere, switch-uri și DNS;</li><li>Modele și protocoale de rețea;</li><li>Topologii și scheme de rețea;</li><li>Configurări introductive în medii de laborator;</li><li>Protejarea conturilor și autentificare în mai mulți pași;</li><li>Parole sigure și recunoașterea phishingului;</li><li>Bune practici pentru confidențialitate și securitate.</li>
+</ul><p class="note">Exercițiile de securitate sunt educaționale și se desfășoară numai în sisteme proprii sau autorizate.</p></article>
+
+<article class="card reveal"><div class="icon">🧠</div><h3>AI & instrumente digitale</h3><p>Explorarea instrumentelor digitale care pot sprijini învățarea și realizarea de conținut.</p><ul>
+<li>Folosirea AI pentru brainstorming și organizarea ideilor;</li><li>Asistență la redactarea și structurarea conținutului;</li><li>Generare de concepte vizuale și materiale demonstrative;</li><li>Fluxuri de lucru pentru productivitate;</li><li>Verificarea și editarea rezultatelor generate;</li><li>Prezentarea limitărilor și utilizarea responsabilă a AI.</li>
+</ul></article>
+</div></div></section>
+
+<section id="business"><div class="wrap"><div class="section-head reveal"><small>04 / BUSINESS & FINANCE</small><h2>Idei, proiecte și educație digitală</h2><p>Resurse introductive pentru înțelegerea mediului digital, a inițiativelor online și a piețelor financiare.</p></div>
+<div class="grid">
+<article class="card reveal"><div class="icon">🚀</div><h3>Digital Business</h3><p>Planificarea și prezentarea unor idei de proiecte sau servicii online.</p><ul>
+<li>Brainstorming și evaluarea ideilor de afaceri digitale;</li><li>Cercetare introductivă a pieței și a publicului;</li><li>Identificarea problemelor pe care un serviciu le poate rezolva;</li><li>Definirea unei oferte și a livrabilelor;</li><li>Realizarea unei pagini de prezentare pentru un proiect;</li><li>Noțiuni de promovare și comunicare online;</li><li>Magazine online demonstrative și organizarea produselor;</li><li>Analiza cererii și compararea alternativelor.</li>
+</ul></article>
+
+<article class="card reveal"><div class="icon">📈</div><h3>Trading & Financial Markets</h3><p>Materiale de învățare despre piețele financiare, fără promisiuni de profit.</p><ul>
+<li>Noțiuni introductive despre acțiuni și piețe financiare;</li><li>Citirea graficelor și a lumânărilor japoneze;</li><li>Concepte de trend, suport și rezistență;</li><li>Diferența dintre investiții și trading;</li><li>Simulări și conturi demo pentru învățare;</li><li>Risc, volatilitate și importanța protejării capitalului;</li><li>Jurnal de studiu și analiză a exemplelor.</li>
+</ul><p class="note">Conținut exclusiv educațional, nu semnale de tranzacționare și nu recomandări financiare.</p></article>
+
+<article class="card reveal"><div class="icon">📚</div><h3>Resurse & învățare</h3><p>Un spațiu pentru ghiduri, explicații și materiale create pe parcurs.</p><ul>
+<li>Ghiduri pentru începători, organizate pe domenii;</li><li>Explicații pas cu pas și exemple practice;</li><li>Liste de instrumente și resurse utile;</li><li>Rezultate, lecții învățate și greșeli corectate;</li><li>Proiecte demonstrative și studii de caz;</li><li>Actualizări pe măsură ce apar materiale noi.</li>
+</ul></article>
+</div>
+<div class="notice"><strong>Transparență:</strong> DS APEX prezintă servicii, proiecte și materiale aflate în dezvoltare. Nu toate domeniile reprezintă servicii profesionale disponibile imediat. Nivelul de experiență, posibilitățile și termenii fiecărei colaborări vor fi comunicați clar înainte de începerea unui proiect.</div>
+</div></section>
+
+<section id="projects"><div class="wrap split"><div class="copy reveal"><div class="eyebrow">05 / Proiecte & galerie</div><h2>Lucrări reale. Progres vizibil.</h2><p>Aici vor apărea site-uri realizate, proiecte de robotică, concepte grafice, imagini și videoclipuri generate, materiale sportive și alte experimente.</p><p>Galeria va fi completată treptat, cu exemple proprii și descrieri scurte despre procesul de realizare.</p><span class="pill">Web</span><span class="pill">Robotică</span><span class="pill">Design</span><span class="pill">Video AI</span><span class="pill">Sport</span></div><div class="visual reveal"><strong>CREATE.<br>BUILD.<br>IMPROVE.</strong></div></div></section>
+
+<section id="vision"><div class="wrap split"><div class="copy reveal"><div class="eyebrow">06 / Viziune</div><h2>Mai departe, mereu înainte.</h2><p>Viziunea DS APEX este să unească sportul, tehnologia și creativitatea într-o platformă utilă, construită prin proiecte și învățare continuă.</p><p>Obiectivul este progresul real: proiect după proiect, antrenament după antrenament, experiență după experiență.</p></div><div class="visual reveal"><strong>DISCIPLINE<br>IN ACTION.</strong></div></div></section>
+
+<section id="contact"><div class="wrap"><div class="contact-box reveal"><div class="eyebrow">07 / Contact</div><h2 style="font:700 clamp(1.7rem,4vw,2.5rem) Orbitron,sans-serif;margin-top:12px">Hai să discutăm.</h2><p>Pentru întrebări, propuneri sau discuții despre un proiect, mă poți contacta telefonic sau pe WhatsApp.</p>
+<div class="contact-actions"><a class="btn" href="tel:+40771519522" aria-label="Apelează numărul DS APEX">☎ Sună-mă · 0771 519 522</a><a class="btn alt" href="https://wa.me/40771519522" target="_blank" rel="noopener noreferrer" aria-label="Deschide conversația WhatsApp cu DS APEX">WhatsApp · Scrie-mi</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> DS APEX. All rights reserved.</span><span>DISCIPLINE. PERFORMANCE. INNOVATION.</span></div></footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+</script>
+</body>
+</html>
